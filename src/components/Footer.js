@@ -6,14 +6,14 @@ const Footer = () => {
         <footer>
             <aside>
                 <ul className="reseaux">
-                    <li><Link to="/"></Link><BsInstagram /></li>
-                    <li><Link to="https://www.facebook.com/UniteScoute008BM"></Link><BsFacebook /></li>
+                    <li><Link target="_blank" to="/"><BsInstagram /></Link></li>
+                    <li><Link target="_blank" to="https://www.facebook.com/UniteScoute008BM"><BsFacebook /></Link></li>
                 </ul>
                 <ul className="rappel">
-                    <li><Link to="/">Actualités</Link></li>
-                    <li><Link to="/">Sections</Link></li>
-                    <li><Link to="/">Contact</Link></li>
-                    <li><Link to="/">Photos</Link></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/">About</Link></li>
+                    <li><Link to="/">Terms</Link></li>
+                    <li><Link to="/">Privacy policy</Link></li>
                 </ul>
                 <p>Powered by Lucas Graeven</p>
             </aside>
