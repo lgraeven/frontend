@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
     return (
         <header>
-            <nav>
-                <a href="./" class="logo" target="_blank"><img src="" alt=""/></a>
+            <nav class="navbar">
+                <Link to="/" class="logo" ><img src={require("../image/logo-scout.png")} alt=""/></Link>
 
                 <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
                 <label for="menu-icon"></label>

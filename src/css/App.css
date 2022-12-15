@@ -3,4 +3,12 @@
   padding: 0;
 }
 
+.App .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.App .navbar img {
+  width: 25%;
+}
+
 /*# sourceMappingURL=App.css.map */
