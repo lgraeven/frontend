@@ -1,14 +1,64 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: fantasy;
+  color: #faf9f7;
 }
 
+.App {
+  background-color: #27241D;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.App header {
+  background-color: #857F72;
+}
 .App .navbar {
-  display: flex;
-  justify-content: space-between;
+  font-size: 120%;
 }
 .App .navbar img {
-  width: 25%;
+  width: 7.5vw;
+}
+.App .navbar .pt-5 {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.App .navbar .pt-5 li {
+  max-width: 20%;
+  margin: 0 3vw;
+}
+.App .navbar .pt-5 li:first-child a:before {
+  content: none;
+}
+.App .navbar .pt-5 li a {
+  background-image: linear-gradient(to right, #85b7bc, #85b7bc 50%, #faf9f7 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.App .navbar .pt-5 li a:before {
+  content: "";
+  background: #f29201;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.App .navbar .pt-5 li a:hover {
+  background-position: 0;
+}
+.App .navbar .pt-5 li a:hover:before {
+  width: 100%;
 }
 
 /*# sourceMappingURL=App.css.map */

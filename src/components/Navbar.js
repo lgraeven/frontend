@@ -4,22 +4,15 @@ const Navbar = () => {
     return (
         <header>
             <nav class="navbar">
-                <Link to="/" class="logo" ><img src={require("../image/logo-scout.png")} alt=""/></Link>
-
-                <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
-                <label for="menu-icon"></label>
                 <nav class="nav">
                     <ul class="pt-5">
-                        <li><a href="#">Actualités</a></li>
-                        <li><a href="#">Sections</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Photos</a></li>
+                        <li class=""><Link to="/" class="logo" ><img src={require("../image/logo-scout.png")} alt="" /></Link></li>
+                        <li><Link to="/">Actualités</Link></li>
+                        <li><Link to="/">Sections</Link></li>
+                        <li><Link to="/">Contact</Link></li>
+                        <li><Link to="/">Photos</Link></li>
                     </ul>
                 </nav>
-
-                <div class="section-center">
-                    <h1 class="mb-0"></h1>
-                </div>
             </nav>
         </header>
     )
