@@ -2,17 +2,20 @@
     margin: 0;
     padding: 0;
     font-family: fantasy;
-    color: #faf9f7;
+    color: #F7F7F7;
 }
 
 .App {
-    header {
-        background-color: #857F72;
-    }
-
-    background-color: #27241D;
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
     min-height: 100vh;
     min-width: 100vw;
+
+    header {
+        background-color: #7E7E7E;
+    }
+
 
     .navbar {
         font-size: 120%;
@@ -30,15 +33,16 @@
             li {
                 max-width: 20%;
                 margin: 0 3vw;
-                &:first-child a:before{
+
+                &:first-child a:before {
                     content: none;
                 }
 
                 a {
                     background-image: linear-gradient(to right,
-                    #85b7bc,
-                    #85b7bc 50%,
-                    #faf9f7 50%);
+                            #85b7bc,
+                            #85b7bc 50%,
+                            #F7F7F7 50%);
                     background-size: 200% 100%;
                     background-position: -100%;
                     display: inline-block;
@@ -59,9 +63,10 @@
                         height: 3px;
                         transition: all 0.3s ease-in-out;
                     }
+
                     &:hover {
                         background-position: 0;
-    
+
                         &:before {
                             width: 100%;
                         }
@@ -71,6 +76,30 @@
 
 
 
+            }
+        }
+    }
+
+    footer {
+        margin-top: auto;
+        background-color: #7E7E7E;
+        width: 100%;
+        min-height: auto;
+        align-items: center;
+
+        aside {
+            display: flex;
+            justify-content: space-between;
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                margin: 0 2%;
+                width: 100px;
+                li{
+                    text-decoration: none;
+                    list-style: none;
+                }
             }
         }
     }
