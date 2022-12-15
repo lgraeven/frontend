@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: fantasy;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #F7F7F7;
 }
 
@@ -30,6 +30,17 @@
 .App .navbar .pt-5 li {
   max-width: 20%;
   margin: 0 3vw;
+}
+.App .navbar .pt-5 li .rotate {
+  animation: rotation 12s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 .App .navbar .pt-5 li:first-child a:before {
   content: none;
@@ -71,17 +82,55 @@
 }
 .App footer aside {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
-.App footer aside ul {
+.App footer aside .reseaux {
   display: flex;
   justify-content: space-around;
   margin: 0 2%;
   width: 100px;
 }
-.App footer aside ul li {
+.App footer aside .reseaux li {
   text-decoration: none;
   list-style: none;
+  margin-top: 10%;
+}
+.App footer aside .rappel {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin: 10px;
+}
+.App footer aside .rappel li {
+  text-decoration: none;
+  list-style: none;
+  background-image: linear-gradient(to right, #85b7bc, #85b7bc 50%, #F7F7F7 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.App footer aside .rappel li:before {
+  content: "";
+  background: #f29201;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.App footer aside .rappel li:hover {
+  background-position: 0;
+}
+.App footer aside .rappel li:hover:before {
+  width: 100%;
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -6,7 +6,7 @@ const Navbar = () => {
             <nav class="navbar">
                 <nav class="nav">
                     <ul class="pt-5">
-                        <li class=""><Link to="/" class="logo" ><img src={require("../image/logo-scout.png")} alt="" /></Link></li>
+                        <li class=""><Link to="/" class="logo" ><img className='rotate' src={require("../image/logo-scout.png")} alt="" /></Link></li>
                         <li><Link to="/">Actualités</Link></li>
                         <li><Link to="/">Sections</Link></li>
                         <li><Link to="/">Contact</Link></li>
