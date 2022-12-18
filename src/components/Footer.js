@@ -10,10 +10,10 @@ const Footer = () => {
                     <li><Link target="_blank" to="https://www.facebook.com/UniteScoute008BM"><BsFacebook /></Link></li>
                 </ul>
                 <ul className="rappel">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/">About</Link></li>
-                    <li><Link to="/">Terms</Link></li>
-                    <li><Link to="/">Privacy policy</Link></li>
+                    <li><Link to="/">Accueil</Link></li>
+                    <li><Link to="/">À propos</Link></li>
+                    <li><Link to="/">Termes</Link></li>
+                    <li><Link to="/">Politiques</Link></li>
                 </ul>
                 <p>Powered by Lucas Graeven</p>
             </aside>
