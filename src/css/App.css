@@ -136,6 +136,7 @@
 }
 .App footer aside .rappel li:hover:before {
   width: 100%;
+  height: 10%;
 }
 .App .cadre {
   background-color: rgba(126, 126, 126, 0.3);
