@@ -149,6 +149,7 @@
 }
 .App .cadre h1 {
   text-align: center;
+  margin: 2%;
 }
 .App .cadre .publi {
   display: flex;
