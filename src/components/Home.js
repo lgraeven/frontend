@@ -1,5 +1,33 @@
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import config from "../config";
+
 const Home = () => {
+    const [data, setData] = useState(null);
+    const [isPending, setIsPending] = useState(true);
+    const [error, setError] = useState(null);
+    const TOKEN = config.TOKEN;
+
+    useEffect(() => {
+        fetch(`https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=${TOKEN}`)
+            .then(Response => {
+                if (!Response.ok) {
+                    setError(new Error(`${Response.status}-bad request`))
+                    setIsPending(false)
+                }
+                return Response.json()
+            })
+            .then(data => {
+                console.log(data.data)
+                setData(data.data)
+                setIsPending(false)
+            })
+            .catch(er => {
+                setError(er)
+                setIsPending(false)
+            })
+    }, [TOKEN])
+
     return (
         <main className="cadre">
             <h1>Unité scout d'Hermée</h1>
